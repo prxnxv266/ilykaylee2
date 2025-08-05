@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ily kaylee</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon with Heart -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #ff69b4, #8a2be2);
+      cursor: none;
+    }
+
+    .book-page {
+      max-height: 80vh;
+      object-fit: contain;
+      border: 10px solid #fff;
+      border-radius: 1rem;
+      background-color: #fdf6f0;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      transition: opacity 0.5s ease;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+
+    .fade-in {
+      opacity: 1;
+    }
+.playlist-container {
+  background-color: #f7f7f7; /* Light background color */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.playlist-container h3 {
+  font-size: 24px;
+  color: #a1a1a1; /* Text color */
+  margin-bottom: 15px;
+}
+    #custom-cursor {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      width: 24px;
+      height: 24px;
+      transition: transform 0.1s ease;
+    }
+
+    .heart {
+      position: fixed;
+      pointer-events: none;
+      font-size: 10px;
+      color: pink;
+      filter: drop-shadow(0 0 3px #ff69b4);
+      z-index: 9999;
+    }
+
+    .trail {
+      position: fixed;
+      pointer-events: none;
+      font-size: 8px;
+      color: pink;
+      opacity: 0;
+      filter: drop-shadow(0 0 2px #ff69b4);
+      transition: all 0.5s ease;
+    }
+  </style>
+</head>
+<body class="text-white">
+  <img id="custom-cursor" src="https://art.pixilart.com/77f463f988b313b.png" alt="Custom Cursor">
+
+  <!-- 1. Landing Section -->
+  <section class="text-center py-12 px-4">
+    <h1 class="text-4xl font-bold mb-4">hi kaylee</h1>
+    <p class="text-lg max-w-xl mx-auto">there's a lot to say and hopefully i've said everything i wanted to say in this book. i hope you read it until the end because there's something that i wanted to reveal a bit later on, on the 27th of August, because an year would've been completed for our relationship. But, you broke up with me just before that. Anyways, i've written everything with my pure heart so i hope you understand what im tryna say.</p>
+  </section>
+
+  <!-- 2. Handwritten Book Viewer -->
+  <section class="text-center py-8">
+    <h2 class="text-2xl font-semibold mb-4">Our beautiful relationship.</h2>
+    <div class="flex flex-col items-center book-container">
+      <div id="bookWrapper" class="book-wrapper">
+        <img id="bookImage" src="" alt="Book Page" class="book-page rounded shadow-lg mb-4" />
+      </div>
+      <div class="flex space-x-4">
+        <button onclick="prevPage()" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded">Previous</button>
+        <button onclick="nextPage()" class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded">Next</button>
+      </div>
+      <p class="mt-2 text-sm">Page <span id="pageNumber">1</span> of 33</p>
+    </div>
+  </section>
+
+<section class="py-8 px-4 text-center">
+  <h2 class="text-2xl font-semibold text-center mb-6">Things that meant a lot to me</h2>
+  <p class="text-lg max-w-2xl mx-auto">
+    kaylee i always adored you and i know you loved me very much and i know you still do, and im a kind of person that enjoys each and every moment that we're living. I know not everything lasts long. When you used to do something cute for me, or just even add my name on your discord bio, i used to love it so much, i never said to you about it, but it meant so much for me, so fucking much. You have helped me so much kaylee. You can see the things im talking about below. I used to take screenshots of these to keep it with me forever and maybe even show you when we meet and have a good laugh about it. It's so cute.💖
+  </p>
+</section>
+
+
+<!-- 3. Gallery -->
+<section class="py-8 px-4">
+  <div class="flex flex-col items-center max-w-xl mx-auto">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/DCss1.png" class="rounded shadow mb-4" alt="Memory 1">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/DCss2.png" class="rounded shadow mb-4" alt="Memory 2">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/DCss3.png" class="rounded shadow mb-4" alt="Memory 3">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/DCss4.png" class="rounded shadow mb-4" alt="Memory 4">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/DCss5.png" class="rounded shadow mb-4" alt="Memory 5">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/DCss6.png" class="rounded shadow mb-4" alt="Memory 6">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/DCss7.png" class="rounded shadow mb-4" alt="Memory 7">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/DCss8.png" class="rounded shadow mb-4" alt="Memory 8">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/SpotifySS1.png" class="rounded shadow mb-4" alt="Memory 9">
+  </div>
+</section>
+
+
+ <!-- 4. Sentimental Section -->
+<section class="py-12 px-4 text-center">
+  <p class="max-w-2xl mx-auto text-lg mb-6">
+    Kaylee, you already know how much you meant to me and how much i loved you. Being in a long distance relationship is hard and it made it even harder when we didn't use to talk regularly, or even on call, because i wanted to know about your daily life, how your day went and made sure youre fine. But, without that, i still made time or thought of some things to make this relationship come lively. Following are some things that i did that you can see and keep it with you for the rest of your life. I had and still have some more plans for your birthday and ofcourse for our relationship but it wont be possible without you being with me. It'd only happen if we'll still be together but if not then i'll just have to take it to my grave.
+  </p>
+
+  <!-- Images -->
+  <div class="flex flex-col items-center space-y-4 mb-6">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/Snapchat-678753056%5B1%5D.jpg" class="rounded shadow max-w-xs" alt="Sentimental 1">
+    <img src="https://raw.githubusercontent.com/prxnxv266/ilykaylee2/main/Snapchat-706700697.jpg" class="rounded shadow max-w-xs" alt="Sentimental 2">
+  </div>
+  <p class="max-w-2xl mx-auto text-lg mb-6">
+and ofcourse this playlist, how can i forget this, this is the only thing that kept me going when i missed you and also when i'll miss you even more now, i still update it and i'll keep on updating it, be it if you're with me or not. you'll still be my cute baby and i'll keep our relationship alive and well through this playlist.
+  </p>
+  <!-- Spotify Playlist Link -->
+  <div class="mb-6 flex justify-center">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2I2eDcX5b47mvWus1zgH1X?utm_source=generator" width="500" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+  <!-- Website Link -->
+  <div>
+  <p class="max-w-2xl mx-auto text-lg mb-6">
+And ofcourse, this website that i made for you back in december for your new years, its still up online, its always gonna be online like the playlist, i'm never taking these down, so if you ever wanna have a look when you miss me or when you just wanna relive the memories, you can take a look at it.
+  </p>
+    <a href="https://prxnxv266.github.io/ilykaylee/" target="_blank" class="text-purple-300 underline hover:text-purple-400 transition">
+      ILY KAYLEE
+    </a>
+  </div>
+</section>
+
+
+  <!-- 5. Music Surprise -->
+<section class="w-full py-12 px-4 text-center">
+  <p class="mb-4 text-lg max-w-xl mx-auto">and the last special thing, this song by Jhene Aiko. Dont know if you remember but i said to you some time ago that i dedicated this song to you and it's always gonna be yours forever. I play this song everyday and it just makes me happy.</p>
+
+  <div class="flex justify-center">
+    <iframe 
+      width="425" 
+      height="80" 
+      scrolling="no" 
+      frameborder="no" 
+      allow="autoplay" 
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/jheneaiko/while-were-young-1&color=%23ff69b4&auto_play=false&show_comments=false">
+    </iframe>
+  </div>
+
+  <p class="text-pink-200 mt-4">
+    or <a href="https://soundcloud.com/jheneaiko/while-were-young-1" target="_blank" class="underline hover:text-white transition">listen on SoundCloud</a>
+  </p>
+</section>
+
+  <p class="mb-4 text-lg max-w-xl mx-auto">that is it. Kaylee, people say that if you really want something, you should try your hardest and give it a second chance. And i still want you and us, and hopefully you read the last bit of the book, so that told you something. If you're still interested and think we can make this work like you used to say that "we're gonna make this relationship work wither way", just think about it, dont think too much about commitments and stuff, we'll both figure this out and i know we will. We got this. but if youre over us then this is probably a last goodbye to you as your boyfriend. You still have to let me know about this though.<br>
+We can still be friends and try to text often, but it still depends on you on how busy you are. I'm not gonna force you into it, you know what to do. I know whatever decision you'll take, it'll be good for you and at the end, thats all i care about. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<strong>I LOVE YOU.</strong></p>
+
+   <!-- Footer -->
+   <footer class ="mt-10 text-center">
+       " <p 
+       class ="text-white">
+This website is a reflection of how much you mean to me. I hope it brings a smile to your face just like you used to bring to mine every day, and you still do. I love you.<br><br>
+Made with ❤️ for the forever <strong> love of my life</strong>, <b>Kaylee </b>💗</p><br><br>
+   </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const pages = [];
+    for (let i = 1; i <= 33; i++) {
+      pages.push(`https://prxnxv266.github.io/ilykaylee2/page_${i}.jpg`);
+    }
+
+    let currentPage = 0;
+    const imageElement = document.getElementById("bookImage");
+    const pageNumber = document.getElementById("pageNumber");
+
+    function updatePage() {
+      imageElement.classList.add("fade-out");
+      setTimeout(() => {
+        imageElement.src = pages[currentPage];
+        pageNumber.textContent = currentPage + 1;
+        imageElement.classList.remove("fade-out");
+        imageElement.classList.add("fade-in");
+      }, 300);
+    }
+
+    function nextPage() {
+      if (currentPage < pages.length - 1) {
+        currentPage++;
+        updatePage();
+      }
+    }
+
+    function prevPage() {
+      if (currentPage > 0) {
+        currentPage--;
+        updatePage();
+      }
+    }
+
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+    });
+
+    // Cursor tracking
+    const cursor = document.getElementById('custom-cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = (e.clientX - 12) + 'px';
+      cursor.style.top = (e.clientY - 12) + 'px';
+    });
+
+    // Floating Heart Trail
+    const body = document.body;
+    const maxTrails = 10;
+    let trailHearts = [];
+    let targetX = 0, targetY = 0;
+    let currentX = 0, currentY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+    });
+
+    function lerp(start, end, factor) {
+      return (1 - factor) * start + factor * end;
+    }
+
+    function updateHeartPosition() {
+      currentX = lerp(currentX, targetX, 0.2);
+      currentY = lerp(currentY, targetY, 0.2);
+
+      if (trailHearts.length < maxTrails) {
+        createTrail(currentX, currentY);
+      }
+
+      requestAnimationFrame(updateHeartPosition);
+    }
+
+    function createTrail(x, y) {
+      const trail = document.createElement('div');
+      trail.className = 'trail';
+      trail.innerHTML = '❤️';
+      trail.style.left = `${x}px`;
+      trail.style.top = `${y}px`;
+      body.appendChild(trail);
+      trailHearts.push(trail);
+
+      requestAnimationFrame(() => {
+        trail.style.opacity = '0.5';
+        trail.style.transform = 'translate(-3px, -3px) scale(0.8)';
+      });
+
+      setTimeout(() => {
+        trail.style.opacity = '0';
+        trail.style.transform = 'translate(-6px, -6px) scale(0.6)';
+      }, 150);
+
+      setTimeout(() => {
+        trail.remove();
+        trailHearts = trailHearts.filter(h => h !== trail);
+      }, 300);
+    }
+
+    // Book nav with keyboard
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') nextPage();
+      if (e.key === 'ArrowLeft') prevPage();
+    });
+
+    // Initial page load
+    window.onload = updatePage;
+    updateHeartPosition();
+  </script>
+</body>
+</html>
